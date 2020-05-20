@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhcc.zpc.business.mapper.ZxPcrpPcMapper">
+  <resultMap id="BaseResultMap" type="com.dhcc.zpc.business.entity.ZxPcrpPc">
+    <result column="pa01ai01" jdbcType="VARCHAR" property="pa01ai01" />
+    <result column="pc010q01" jdbcType="VARCHAR" property="pc010q01" />
+    <result column="pc010q02" jdbcType="VARCHAR" property="pc010q02" />
+    <result column="pc010s01" jdbcType="VARCHAR" property="pc010s01" />
+    <result column="pc02as01" jdbcType="VARCHAR" property="pc02as01" />
+    <result column="pc02as02" jdbcType="VARCHAR" property="pc02as02" />
+    <result column="pc02bs01" jdbcType="VARCHAR" property="pc02bs01" />
+    <result column="pc02bj01" jdbcType="VARCHAR" property="pc02bj01" />
+    <result column="pc02bs02" jdbcType="VARCHAR" property="pc02bs02" />
+    <result column="pc02cs01" jdbcType="VARCHAR" property="pc02cs01" />
+    <result column="pc02cj01" jdbcType="VARCHAR" property="pc02cj01" />
+    <result column="pc02ds01" jdbcType="VARCHAR" property="pc02ds01" />
+    <result column="pc02es01" jdbcType="VARCHAR" property="pc02es01" />
+    <result column="pc02es02" jdbcType="VARCHAR" property="pc02es02" />
+    <result column="pc02ej01" jdbcType="VARCHAR" property="pc02ej01" />
+    <result column="pc02ej02" jdbcType="VARCHAR" property="pc02ej02" />
+    <result column="pc02ej03" jdbcType="VARCHAR" property="pc02ej03" />
+    <result column="pc02fs01" jdbcType="VARCHAR" property="pc02fs01" />
+    <result column="pc02fs02" jdbcType="VARCHAR" property="pc02fs02" />
+    <result column="pc02fj01" jdbcType="VARCHAR" property="pc02fj01" />
+    <result column="pc02fj02" jdbcType="VARCHAR" property="pc02fj02" />
+    <result column="pc02fj03" jdbcType="VARCHAR" property="pc02fj03" />
+    <result column="pc02gs01" jdbcType="VARCHAR" property="pc02gs01" />
+    <result column="pc02gs02" jdbcType="VARCHAR" property="pc02gs02" />
+    <result column="pc02gj01" jdbcType="VARCHAR" property="pc02gj01" />
+    <result column="pc02gj02" jdbcType="VARCHAR" property="pc02gj02" />
+    <result column="pc02gj03" jdbcType="VARCHAR" property="pc02gj03" />
+    <result column="pc02hs01" jdbcType="VARCHAR" property="pc02hs01" />
+    <result column="pc02hs02" jdbcType="VARCHAR" property="pc02hs02" />
+    <result column="pc02hj01" jdbcType="VARCHAR" property="pc02hj01" />
+    <result column="pc02hj02" jdbcType="VARCHAR" property="pc02hj02" />
+    <result column="pc02hj03" jdbcType="VARCHAR" property="pc02hj03" />
+    <result column="pc02hj04" jdbcType="VARCHAR" property="pc02hj04" />
+    <result column="pc02hj05" jdbcType="VARCHAR" property="pc02hj05" />
+    <result column="pc02is01" jdbcType="VARCHAR" property="pc02is01" />
+    <result column="pc02is02" jdbcType="VARCHAR" property="pc02is02" />
+    <result column="pc02ij01" jdbcType="VARCHAR" property="pc02ij01" />
+    <result column="pc02ij02" jdbcType="VARCHAR" property="pc02ij02" />
+    <result column="pc02ij03" jdbcType="VARCHAR" property="pc02ij03" />
+    <result column="pc02ij04" jdbcType="VARCHAR" property="pc02ij04" />
+    <result column="pc02ij05" jdbcType="VARCHAR" property="pc02ij05" />
+    <result column="pc02ks01" jdbcType="VARCHAR" property="pc02ks01" />
+    <result column="pc030s01" jdbcType="VARCHAR" property="pc030s01" />
+    <result column="pc030s02" jdbcType="VARCHAR" property="pc030s02" />
+    <result column="pc030j01" jdbcType="VARCHAR" property="pc030j01" />
+    <result column="pc040s01" jdbcType="VARCHAR" property="pc040s01" />
+    <result column="pc010d01" jdbcType="LONGVARCHAR" property="pc010d01" />
+    <result column="pc02ad01" jdbcType="LONGVARCHAR" property="pc02ad01" />
+    <result column="pc02ad02" jdbcType="LONGVARCHAR" property="pc02ad02" />
+    <result column="pc02as03" jdbcType="LONGVARCHAR" property="pc02as03" />
+    <result column="pc02ar01" jdbcType="LONGVARCHAR" property="pc02ar01" />
+    <result column="pc02bd01" jdbcType="LONGVARCHAR" property="pc02bd01" />
+    <result column="pc02bs03" jdbcType="LONGVARCHAR" property="pc02bs03" />
+    <result column="pc02bj02" jdbcType="LONGVARCHAR" property="pc02bj02" />
+    <result column="pc02dd01" jdbcType="LONGVARCHAR" property="pc02dd01" />
+    <result column="pc02ds02" jdbcType="LONGVARCHAR" property="pc02ds02" />
+    <result column="pc02ds03" jdbcType="LONGVARCHAR" property="pc02ds03" />
+    <result column="pc02dj01" jdbcType="LONGVARCHAR" property="pc02dj01" />
+    <result column="pc02ds04" jdbcType="LONGVARCHAR" property="pc02ds04" />
+    <result column="pc02kd01" jdbcType="LONGVARCHAR" property="pc02kd01" />
+    <result column="pc02kd02" jdbcType="LONGVARCHAR" property="pc02kd02" />
+    <result column="pc02ks02" jdbcType="LONGVARCHAR" property="pc02ks02" />
+    <result column="pc02kj01" jdbcType="LONGVARCHAR" property="pc02kj01" />
+    <result column="pc02kj02" jdbcType="LONGVARCHAR" property="pc02kj02" />
+    <result column="pc030d01" jdbcType="LONGVARCHAR" property="pc030d01" />
+    <result column="pc040d01" jdbcType="LONGVARCHAR" property="pc040d01" />
+    <result column="pc040s02" jdbcType="LONGVARCHAR" property="pc040s02" />
+    <result column="pc040j01" jdbcType="LONGVARCHAR" property="pc040j01" />
+  </resultMap>
+  <insert id="insert" parameterType="com.dhcc.zpc.business.entity.ZxPcrpPc">
+    insert into zx_pcrp_pc (pa01ai01, pc010q01, pc010q02, 
+      pc010s01, pc02as01, pc02as02, 
+      pc02bs01, pc02bj01, pc02bs02, 
+      pc02cs01, pc02cj01, pc02ds01, 
+      pc02es01, pc02es02, pc02ej01, 
+      pc02ej02, pc02ej03, pc02fs01, 
+      pc02fs02, pc02fj01, pc02fj02, 
+      pc02fj03, pc02gs01, pc02gs02, 
+      pc02gj01, pc02gj02, pc02gj03, 
+      pc02hs01, pc02hs02, pc02hj01, 
+      pc02hj02, pc02hj03, pc02hj04, 
+      pc02hj05, pc02is01, pc02is02, 
+      pc02ij01, pc02ij02, pc02ij03, 
+      pc02ij04, pc02ij05, pc02ks01, 
+      pc030s01, pc030s02, pc030j01, 
+      pc040s01, pc010d01, pc02ad01, 
+      pc02ad02, pc02as03, pc02ar01, 
+      pc02bd01, pc02bs03, pc02bj02, 
+      pc02dd01, pc02ds02, pc02ds03, 
+      pc02dj01, pc02ds04, pc02kd01, 
+      pc02kd02, pc02ks02, pc02kj01, 
+      pc02kj02, pc030d01, pc040d01, 
+      pc040s02, pc040j01)
+    values (#{pa01ai01,jdbcType=VARCHAR}, #{pc010q01,jdbcType=VARCHAR}, #{pc010q02,jdbcType=VARCHAR}, 
+      #{pc010s01,jdbcType=VARCHAR}, #{pc02as01,jdbcType=VARCHAR}, #{pc02as02,jdbcType=VARCHAR}, 
+      #{pc02bs01,jdbcType=VARCHAR}, #{pc02bj01,jdbcType=VARCHAR}, #{pc02bs02,jdbcType=VARCHAR}, 
+      #{pc02cs01,jdbcType=VARCHAR}, #{pc02cj01,jdbcType=VARCHAR}, #{pc02ds01,jdbcType=VARCHAR}, 
+      #{pc02es01,jdbcType=VARCHAR}, #{pc02es02,jdbcType=VARCHAR}, #{pc02ej01,jdbcType=VARCHAR}, 
+      #{pc02ej02,jdbcType=VARCHAR}, #{pc02ej03,jdbcType=VARCHAR}, #{pc02fs01,jdbcType=VARCHAR}, 
+      #{pc02fs02,jdbcType=VARCHAR}, #{pc02fj01,jdbcType=VARCHAR}, #{pc02fj02,jdbcType=VARCHAR}, 
+      #{pc02fj03,jdbcType=VARCHAR}, #{pc02gs01,jdbcType=VARCHAR}, #{pc02gs02,jdbcType=VARCHAR}, 
+      #{pc02gj01,jdbcType=VARCHAR}, #{pc02gj02,jdbcType=VARCHAR}, #{pc02gj03,jdbcType=VARCHAR}, 
+      #{pc02hs01,jdbcType=VARCHAR}, #{pc02hs02,jdbcType=VARCHAR}, #{pc02hj01,jdbcType=VARCHAR}, 
+      #{pc02hj02,jdbcType=VARCHAR}, #{pc02hj03,jdbcType=VARCHAR}, #{pc02hj04,jdbcType=VARCHAR}, 
+      #{pc02hj05,jdbcType=VARCHAR}, #{pc02is01,jdbcType=VARCHAR}, #{pc02is02,jdbcType=VARCHAR}, 
+      #{pc02ij01,jdbcType=VARCHAR}, #{pc02ij02,jdbcType=VARCHAR}, #{pc02ij03,jdbcType=VARCHAR}, 
+      #{pc02ij04,jdbcType=VARCHAR}, #{pc02ij05,jdbcType=VARCHAR}, #{pc02ks01,jdbcType=VARCHAR}, 
+      #{pc030s01,jdbcType=VARCHAR}, #{pc030s02,jdbcType=VARCHAR}, #{pc030j01,jdbcType=VARCHAR}, 
+      #{pc040s01,jdbcType=VARCHAR}, #{pc010d01,jdbcType=LONGVARCHAR}, #{pc02ad01,jdbcType=LONGVARCHAR}, 
+      #{pc02ad02,jdbcType=LONGVARCHAR}, #{pc02as03,jdbcType=LONGVARCHAR}, #{pc02ar01,jdbcType=LONGVARCHAR}, 
+      #{pc02bd01,jdbcType=LONGVARCHAR}, #{pc02bs03,jdbcType=LONGVARCHAR}, #{pc02bj02,jdbcType=LONGVARCHAR}, 
+      #{pc02dd01,jdbcType=LONGVARCHAR}, #{pc02ds02,jdbcType=LONGVARCHAR}, #{pc02ds03,jdbcType=LONGVARCHAR}, 
+      #{pc02dj01,jdbcType=LONGVARCHAR}, #{pc02ds04,jdbcType=LONGVARCHAR}, #{pc02kd01,jdbcType=LONGVARCHAR}, 
+      #{pc02kd02,jdbcType=LONGVARCHAR}, #{pc02ks02,jdbcType=LONGVARCHAR}, #{pc02kj01,jdbcType=LONGVARCHAR}, 
+      #{pc02kj02,jdbcType=LONGVARCHAR}, #{pc030d01,jdbcType=LONGVARCHAR}, #{pc040d01,jdbcType=LONGVARCHAR}, 
+      #{pc040s02,jdbcType=LONGVARCHAR}, #{pc040j01,jdbcType=LONGVARCHAR})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select pa01ai01, pc010q01, pc010q02, pc010s01, pc02as01, pc02as02, pc02bs01, pc02bj01, 
+    pc02bs02, pc02cs01, pc02cj01, pc02ds01, pc02es01, pc02es02, pc02ej01, pc02ej02, pc02ej03, 
+    pc02fs01, pc02fs02, pc02fj01, pc02fj02, pc02fj03, pc02gs01, pc02gs02, pc02gj01, pc02gj02, 
+    pc02gj03, pc02hs01, pc02hs02, pc02hj01, pc02hj02, pc02hj03, pc02hj04, pc02hj05, pc02is01, 
+    pc02is02, pc02ij01, pc02ij02, pc02ij03, pc02ij04, pc02ij05, pc02ks01, pc030s01, pc030s02, 
+    pc030j01, pc040s01, pc010d01, pc02ad01, pc02ad02, pc02as03, pc02ar01, pc02bd01, pc02bs03, 
+    pc02bj02, pc02dd01, pc02ds02, pc02ds03, pc02dj01, pc02ds04, pc02kd01, pc02kd02, pc02ks02, 
+    pc02kj01, pc02kj02, pc030d01, pc040d01, pc040s02, pc040j01
+    from zx_pcrp_pc
+  </select>
+</mapper>

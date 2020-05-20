@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://139.199.122.96:3306/rules?useUnicode=true&characterEncoding=utf-8&useSSL=true&verifyServerCertificate=false
+    username: dev
+    password: dev
+
+  redis:
+    ## Redis数据库索引（默认为0）
+    database: 0
+    host: 140.143.124.166 # Redis服务器地址
+    port: 6380 # Redis服务器连接端口
+    password: dhcc_redis#0713
+
+## MQ
+rocketmq:
+  name-server: 140.143.124.166:28082
+risk:
+  mq:
+    instance:
+      mfsMessage:
+        topicName: AnalysisXmlTopic-dev
