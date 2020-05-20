@@ -44,10 +44,21 @@ spring:
           log-slow-sql: true #是否开启慢sql查询监控
           slow-sql-millis: 1 #慢SQL执行时间
 
+# RocketMQ
 rocketmq:
   producer:
     group: risk-data-message-group
 
+# Swagger界面内容配置
+swagger:
+  title: SpringBoot API接口文档
+  description: SpringBoot-Demo
+  version: 1.0.0
+  termsOfServiceUrl: http://localhost:8080/doc.html
+  contact:
+    name: zhaopengchao
+    url: http://localhost:8080/doc.html
+    email: zhaopengchao0606@163.com
 
 #  配置全局属性
 mybatis:
