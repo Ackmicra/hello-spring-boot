@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dhcc.zpc.business.mapper.ZxPcrpPcMapper">
-  <resultMap id="BaseResultMap" type="com.dhcc.zpc.business.entity.ZxPcrpPc">
+<mapper namespace="com.dhcc.zpc.business.example.mapper.ZxPcrpPcMapper">
+  <resultMap id="BaseResultMap" type="com.dhcc.zpc.business.example.entity.ZxPcrpPc">
     <result column="pa01ai01" jdbcType="VARCHAR" property="pa01ai01" />
     <result column="pc010q01" jdbcType="VARCHAR" property="pc010q01" />
     <result column="pc010q02" jdbcType="VARCHAR" property="pc010q02" />
@@ -71,7 +71,7 @@
     <result column="pc040s02" jdbcType="LONGVARCHAR" property="pc040s02" />
     <result column="pc040j01" jdbcType="LONGVARCHAR" property="pc040j01" />
   </resultMap>
-  <insert id="insert" parameterType="com.dhcc.zpc.business.entity.ZxPcrpPc">
+  <insert id="insert" parameterType="com.dhcc.zpc.business.example.entity.ZxPcrpPc">
     insert into zx_pcrp_pc (pa01ai01, pc010q01, pc010q02, 
       pc010s01, pc02as01, pc02as02, 
       pc02bs01, pc02bj01, pc02bs02, 

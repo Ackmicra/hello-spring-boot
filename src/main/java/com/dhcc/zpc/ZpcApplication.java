@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("com.dhcc.zpc.business.mapper")
+@MapperScan("com.dhcc.zpc.business.example.mapper")
 @EnableSwagger2Doc
 public class ZpcApplication {
 
