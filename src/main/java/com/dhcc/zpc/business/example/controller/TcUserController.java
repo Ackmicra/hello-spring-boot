@@ -2,8 +2,10 @@ package com.dhcc.zpc.business.example.controller;
 
 import com.dhcc.zpc.business.example.dto.MfsTaskDto;
 import com.dhcc.zpc.business.example.entity.TcUser;
-import com.dhcc.zpc.util.execption.BasicException;
-import com.dhcc.zpc.util.execption.status.ExceptionStatusEnum;
+import com.dhcc.zpc.constant.BusinessCodeEnum;
+import com.dhcc.zpc.util.execption.BusinessServiceException;
+import com.dhcc.zpc.util.execption.JsonParseException;
+import com.dhcc.zpc.util.execption.ParamValidateException;
 import com.dhcc.zpc.util.resp.AppResultBuilder;
 import com.dhcc.zpc.util.resp.ResponseEntity;
 import io.swagger.annotations.Api;
@@ -28,10 +30,9 @@ public class TcUserController {
         try{
             int k = 1/0;
         } catch (Exception e){
-            throw new BasicException(ExceptionStatusEnum.NOT_FOUND, "分母不能为0", e);
-//            throw new MyException(ResultCodeEnum.FAIL.code, "分母不能为0", e);
+            throw new BusinessServiceException(BusinessCodeEnum.ILLEGAL_DATA, "分母不能为0", e);
         }
-        return AppResultBuilder.makeOKRsp("登陆成功");
+        return AppResultBuilder.success("登陆成功");
     }
 
     @GetMapping("/getUser")
@@ -40,6 +41,6 @@ public class TcUserController {
         mfsTaskDto.setIdNo("12345651611561616");
         mfsTaskDto.setCifName("张三");
         mfsTaskDto.setPhoneNo("12346578979");
-        return AppResultBuilder.response().okQuery(mfsTaskDto);
+        return AppResultBuilder.success();
     }
 }
