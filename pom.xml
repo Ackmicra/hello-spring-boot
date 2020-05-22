@@ -151,6 +151,11 @@
             <version>1.9.4</version>
         </dependency>
 
+        <!-- AOP相关 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
