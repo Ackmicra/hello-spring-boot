@@ -7,4 +7,7 @@
 5. 支持统一异常捕
 6. 支持统一响应返回
 7. 集成snowflake分布式主键生成
-8. TODO AOP异常处理
+8. AOP异常拦截处理
+9. 集成SFTP和FTP客户端
+10. 集成邮件发送服务
+11. 集成Alibaba easyexcel的excel导出功能

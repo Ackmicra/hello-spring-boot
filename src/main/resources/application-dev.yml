@@ -4,6 +4,21 @@ spring:
     url: jdbc:mysql://139.199.122.96:3306/rules?useUnicode=true&characterEncoding=utf-8&useSSL=true&verifyServerCertificate=false
     username: dev
     password: dev
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 582146778@qq.com
+    password: nhqvbmgulqgmbcih
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          starttls:
+            enable: true
+            required: true
 
   redis:
     ## Redis数据库索引（默认为0）
@@ -20,3 +35,17 @@ risk:
     instance:
       mfsMessage:
         topicName: AnalysisXmlTopic-dev
+
+sftp:
+  host:
+  username:
+  password:
+  port:
+  privateKey:
+  passphrase:
+
+ftp:
+  host:
+  username:
+  password:
+  port:
